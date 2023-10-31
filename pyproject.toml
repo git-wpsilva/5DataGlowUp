@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "airbnb data"
+version = "0.1.0"
+description = "Desafio de montar um DataViz através de dados da Airbnb"
+authors = ["Wesley Pinheiro da Silva <wpsilva.contato@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+numpy = { version = "^1.26.1", python = ">=3.11,<3.13" }
+pandas = "^2.1.2"
+seaborn = "^0.13.0"
+
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
