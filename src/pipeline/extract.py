@@ -1,5 +1,5 @@
-import os # biblioteca para manipular arquivos e pastas
-import glob # Biblioteca para listar arquivos de um diretorio
+import os  # biblioteca para manipular arquivos e pastas
+import glob  # Biblioteca para listar arquivos de um diretorio
 
 import pandas as pd
 from typing import List
@@ -15,14 +15,16 @@ return: lista de dataframes
 
 path = "data/input"
 
+
 def extract_from_csv(path: str) -> List[pd.DataFrame]:
     all_files = glob.glob(os.path.join(path, "*.csv"))
-    
+
     df_list = []
     for filename in all_files:
         df = pd.read_csv(filename, sep=";")
         df_list.append(df)
     return df_list
+
 
 if __name__ == "__main__":
     df_list = extract_from_csv(path)
