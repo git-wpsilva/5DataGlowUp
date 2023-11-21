@@ -1,9 +1,39 @@
-site_name: My Docs
+site_name: Projeto Airbnb 🏠
+
 theme:
-  name: material # or other theme
+  name: material
+  features:
+    - content.code.copy
+    - content.code.select
+    - navigation.tabs
+    - content.code.annotate
+  logo: img/logo.png
   palette:
-    primary: blue
-  language: en
+  
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
+      toggle:
+        icon: material/brightness-7
+        name: Tema Escuro
+      primary: red
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Tema Claro
+      primary: red
+
+  language: pt
+
+nav:
+  - Home: index.md
+  - Análise Exploratória: eda.md
+  - Dashboard: dashboard.md
+
+
 
 repo_name: "git-wpsilva/5DataGlowUp"
 repo_url: "https://github.com/git-wpsilva/5DataGlowUp"
@@ -13,8 +43,17 @@ markdown_extensions:
       custom_fences:
         - name: mermaid
           class: mermaid
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
 
 plugins:
   - search
   - mkdocstrings:
       default_handler: python
+
+
