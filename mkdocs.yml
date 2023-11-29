@@ -7,7 +7,10 @@ theme:
     - content.code.select
     - navigation.tabs
     - content.code.annotate
-  logo: img/logo.png
+  logo: "https://raw.githubusercontent.com/git-wpsilva/5DataGlowUp/main/img/logo.png"
+  favicon: "https://raw.githubusercontent.com/git-wpsilva/5DataGlowUp/main/img/logo.png"
+  icon: "https://raw.githubusercontent.com/git-wpsilva/5DataGlowUp/main/img/logo.png"
+    
   palette:
   
     # Palette toggle for light mode
@@ -23,7 +26,7 @@ theme:
       scheme: slate
       toggle:
         icon: material/brightness-4
-        name: Tema Claro
+        name: Tema Escuro
       primary: red
 
   language: pt
@@ -33,7 +36,8 @@ nav:
   - Análise Exploratória: eda.md
   - Dashboard: dashboard.md
 
-
+admonition:
+      <type>: <icon>
 
 repo_name: "git-wpsilva/5DataGlowUp"
 repo_url: "https://github.com/git-wpsilva/5DataGlowUp"
@@ -49,7 +53,9 @@ markdown_extensions:
       pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
-  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+
 
 plugins:
   - search

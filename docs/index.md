@@ -1,3 +1,12 @@
+<style>
+  div.md-sidebar.md-sidebar--primary {
+    display: none !important;
+  }
+  .md-grid {
+  max-width: 100%; /* or 100%, if you want to stretch to full-width */
+}
+</style>
+
 # 🏠 Home
 
 Este projeto faz parte do desafio **#5DataGlowUp 23**, realizado por [Heitor Sasaki](https://www.linkedin.com/in/heitorsasaki/) em parceria com a [Cubos Academy](https://www.linkedin.com/in/cubos-academy-459042223/).
